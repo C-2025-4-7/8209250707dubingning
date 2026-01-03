@@ -5,12 +5,12 @@ int indexOf(string s1, string s2) {
 	int len1 = s1.size();
 	int len2 = s2.size();
 	if (len1 == 0 || len1 > len2)return -1;
-	for (int i = 0; i < len2-len1; i++) {/*Àú±éËùÓĞÖ÷´®ÖĞ¿ÉÄÜµÄÆğÊ¼Î»ÖÃ*/
+	for (int i = 0; i < len2-len1+1; i++) {/*å†éæ‰€æœ‰ä¸»ä¸²ä¸­å¯èƒ½çš„èµ·å§‹ä½ç½®*/
 		int j;
 		for ( j = 0; j < len1; j++) {
-			if (s2[i + j] != s1[j])break;/*Á¬ĞøÏàÍ¬£¬·ñÔòÌø³öÑ­»·*/
+			if (s2[i + j] != s1[j])break;/*è¿ç»­ç›¸åŒï¼Œå¦åˆ™è·³å‡ºå¾ªç¯*/
 		}
-		if (j == len1)/*ÉÏÒ»¸ö¼ìÑéÑ­»·ÍêÈ«Íê³É*/return i;
+		if (j == len1)/*ä¸Šä¸€ä¸ªæ£€éªŒå¾ªç¯å®Œå…¨å®Œæˆ*/return i;
 	}
 	return -1;
 }
@@ -23,4 +23,5 @@ int main() {
 	cout<< "indexOf("<<s1<<","<<s2<<")is " << indexOf(s1, s2);
 	
 	return 0;
+
 }
