@@ -1,10 +1,16 @@
-//student.cpp                     ÔÚ´ËÎÄ¼şÖĞ½øĞĞº¯ÊıµÄ¶¨Òå
+//student.cpp                     åœ¨æ­¤æ–‡ä»¶ä¸­è¿›è¡Œå‡½æ•°çš„å®šä¹‰
 #include <iostream>
 #include"student.h"     
-using namespace std;//²»ÒªÂ©Ğ´´ËĞĞ£¬·ñÔò±àÒëÍ¨²»¹ı
-void Student::display()         //ÔÚÀàÍâ¶¨ÒådisplayÀàº¯Êı
+using namespace std;//ä¸è¦æ¼å†™æ­¤è¡Œï¼Œå¦åˆ™ç¼–è¯‘é€šä¸è¿‡
+void Student::display()         //åœ¨ç±»å¤–å®šä¹‰displayç±»å‡½æ•°
 {
-    cout << "num£º" << num << endl;
-    cout << "name£º" << name << endl;
-    cout << "sex£º" << sex << endl;
+    cout << "numï¼š" << num << endl;
+    cout << "nameï¼š" << name << endl;
+    cout << "sexï¼š" << sex << endl;
+}
+void Student::set_value(int a,string b,char c) {
+   
+    num = a;
+    name = b;
+    sex = c;
 }
