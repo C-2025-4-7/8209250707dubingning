@@ -3,10 +3,11 @@
 using namespace std;
 
 int main() {
-	Student stud;                //定义对象
-	Student stud1(007, "tcg", 'm');
+	Student stud;                //瀹氫箟瀵硅薄
+	Student stud1;
+	stud.set_value(007, "tcg", 'm');
 	stud.display();
-	stud1.display();              //执行stud对象的display函数
+	stud1.display();              //鎵цstud瀵硅薄鐨刣isplay鍑芥暟
 	return 0;
 
 }
