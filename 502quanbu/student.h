@@ -1,18 +1,19 @@
 #pragma once
 //student.h  
-//              (ÕâÊÇÍ·ÎÄ¼ş£¬ÔÚ´ËÎÄ¼şÖĞ½øĞĞÀàµÄÉùÃ÷)
+//              (è¿™æ˜¯å¤´æ–‡ä»¶ï¼Œåœ¨æ­¤æ–‡ä»¶ä¸­è¿›è¡Œç±»çš„å£°æ˜)
 #include<iostream>
 #include<string>
 using namespace std;
- class Student              //ÀàÉùÃ÷
+ class Student              //ç±»å£°æ˜
 {
-public:                   //¹«ÓÃ³ÉÔ±º¯ÊıÔ­ĞÍÉùÃ÷
+public:                   //å…¬ç”¨æˆå‘˜å‡½æ•°åŸå‹å£°æ˜
 	void display();
 	Student(int a = 0, string b="000", char c = 'f') {
 		num = a;
 		name = b;
 		sex = c;
 	}
+	void set_value(int a,string b,char c);//è®°å¾—å¸¦å‚æ•°
 private:
 	int num;
 	string name;
